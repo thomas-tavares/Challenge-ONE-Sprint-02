@@ -1,0 +1,145 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #F3F5FC;
+  color: aliceblue;
+  font-family: "Roboto", sans-serif;
+}
+
+.jogo-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+	
+}
+
+.forca {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+.corpo {
+	display: none;
+	align-items: center;
+  	justify-content: center;
+}
+
+.letrasErradasContainer {
+  font-size: 32px;
+  color: #000000;
+}
+
+.fraseLetrasErradas{
+	color: #000000;
+}
+
+.letrasErradasContainer span {
+  margin: 0 2px;
+}
+
+.rodape {
+	position: absolute;
+	bottom: 70px;
+}
+
+.palavraSecretaContainer {
+  font-size: 45px;
+  color: #000000;
+  margin: auto 54px auto;
+}
+
+.button-div{
+	margin: 0px 30px 0px;
+}
+
+.finalButton {
+  background-color: #2980b9;
+  border-radius: 20px;
+  box-shadow: 0 15px 10px 3px rgb(0 0 0 / 10%);
+  padding: 11px;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 19px;
+}
+
+.linkButton {
+text-decoration: none;
+color: #000000;	
+}
+
+.copyright {
+	position: absolute;
+    left: 32px;
+    bottom: 21px;
+}
+
+p {
+	display: inline-block;
+	font-size: 10px;
+	left: 20px;
+	color: #000000;
+}
+
+.aviso-palavra-repetida {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 0 0;
+  padding: 15px 20px;
+  position: absolute;
+  bottom: -55px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.aviso-palavra-repetida p {
+  margin: 0;
+}
+
+.aviso-palavra-repetida.show {
+  transform: translateY(-50px);
+}
+
+
+
+.palavraSecretaContainer span {
+  margin: 0 5px;
+}
+
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.849);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.popup {
+  background: #2980b9;
+  border-radius: 5px;
+  box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.popup button {
+  cursor: pointer;
+  background-color: #fff;
+  border: 0;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+}

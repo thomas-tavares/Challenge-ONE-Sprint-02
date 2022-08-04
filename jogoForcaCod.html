@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo da Forca</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style_forca.css"/>
+</head>
+<body>
+	<div class="jogo-container">
+		<div id="forca-container">	
+			<svg height="500" width="800" class="forca">
+				<!-- forca -->
+          		<line x1="60" y1="80" x2="250" y2="80" stroke="black" stroke-widgth="5" class="forcaCor"/>
+          		<line x1="250" y1="80" x2="250" y2="110" stroke="black" stroke-widgth="5" class="forcaCor"/>
+          		<line x1="60" y1="80" x2="60" y2="460" stroke="black" stroke-widgth="5" class="forcaCor"/>
+          		<line x1="20" y1="460" x2="100" y2="460" stroke="black" stroke-widgth="5" class="forcaCor"/>
+				<!-- cabeça -->
+				<circle cx="250" cy="150" r="40" stroke="black" stroke-widgth="4" fill="pink" class="corpo"/>
+				<!-- corpo -->
+				<line x1="250" y1="190" x2="250" y2="300" stroke="black" stroke-widgth="5" class="corpo"/>
+				<!-- Braço Dir. -->
+				<line x1="250" y1="245" x2="140" y2="150" stroke="black" stroke-widgth="5" class="corpo"/>
+				<!--mão dir-->
+				<circle cx="140" cy="150" r="12" stroke="black" stroke-widgth="4" fill="pink" class="corpo"/>
+				<!-- Braço Esq. -->
+				<line x1="250" y1="245" x2="367" y2="150" stroke="black" stroke-widgth="5" class="corpo"/>
+				<!--mão Esq-->
+				<circle cx="367" cy="150" r="12" stroke="black" stroke-widgth="4" fill="pink" class="corpo"/>
+				<!-- perna esquerda -->
+				<line x1="250" y1="300" x2="340" y2="400" stroke="black" stroke-widgth="5" class="corpo"/>
+				<!--pé esq.-->
+				<ellipse cx="350" cy="410" rx="20" ry="10" stroke="black" stroke-widgth="4" fill="pink" class="corpo"/>
+				<!-- perna direita -->
+				<line x1="250" y1="300" x2="160" y2="400" stroke="black" stroke-widgth="5" class="corpo"/>
+				<ellipse cx="150" cy="410" rx="20" ry="10" stroke="black" stroke-widgth="4" fill="pink" class="corpo"/>
+				
+								
+			</svg>
+		</div>
+
+		<div class="letrasErradasContainer">
+			<h3 class="fraseLetrasErradas">Wrong Words</h3>
+		</div>
+	</div>
+	<div class="rodape">
+		<div class="palavraSecretaContainer"></div>
+		<div class="button-div">
+			<button class="finalButton"><a class="linkButton" href="jogoForcaCod.html">Restart</a></button>
+	    	<button class="finalButton"><a class="linkButton" href="start.html">Return</a></button>
+		</div>
+	</div>
+
+	<div class="copyright">
+		<p>Developed by Thomas Tavares</p>	
+	</div>
+
+	<div class="aviso-palavra-repetida">
+      You have already used this word!
+    </div>
+
+    <div class="popup-container">
+      <div class="popup">
+        <h2 id="mensagem"></h2>
+        <button id="btn-jogar" onclick="reiniciarJogo()">
+          Play Again
+        </button>
+      </div>
+    </div>
+    
+
+
+
+	<script type="text/javascript" src="script_forca.js"></script>
+</body>
+</html>
+
+
+
