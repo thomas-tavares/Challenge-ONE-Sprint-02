@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="addPalavra.css">
+	<title>Hangman Game</title>
+</head>
+<body>
+	<header>
+		<div class="box">
+			<img class="image" src="hangman_game.png">
+		</div>	
+	</header>
+	
+	<main>
+		<input type="text" class="add-palavra" rows="1" cols="70" placeholder="Add a new word to the game">
+
+	<div id="button_container">
+		<button class="button-add-palavra" onclick="adicionaPalavra()">Add New Word</button>
+		<button class="button"><a class="ancor" href="start.html">Return</a></button>
+	</div>
+	</main>
+
+	<footer>
+		<p class="copyright">&copy; Copyright Thomas Tavares 2022</p>
+	</footer>
+	
+	<script type="text/javascript" src="script_forca.js"></script>
+</body>
+</html>
